@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="https://img.icons8.com/fluency/48/000000/pizza-delivery.png" type="image/icon type">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+	<!-- MDB -->
+	<link href="./node_modules/mdb-ui-kit/css/mdb.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Pizza</title>
+</head>
+
+<body>
+
+
+	<div class="pages">
+
+		<div class="container">
+
+			<div class="mt-2 p-1 rounded bg-warning">
+				<h1 class="text-center text-black mb-4">Pitsa buyurtma qilish</h1>
+				<div class="row">
+
+					<div class="col-8 px-5">
+
+						<div class="w-100 border-end border-dark">
+
+							<div class="mb-4">
+								<h3 class=" text-black  mb-3 fw-bold">Noni qanday bo'lsin</h3>
+								<select class="form-select form-select-lg mb-3 w-25 bg-info text-black" id="select"
+									aria-label=".form-select-lg example">
+									<option class=" border border-bottom" value="yupqa">Yupqa</option>
+									<option value="patir">patir</option>
+									<option value="kulcha">kulcha</option>
+									<option value="bo'lichka">bo'lichka</option>
+								</select>
+							</div>
+
+							<div>
+								<h3 class=" text-black  mb-3 fw-bold">Kattaligi</h3>
+								<div class="d-flex gap-4 mb-4">
+
+									<div class="form-check p-0">
+										<input class="form-check-input d-none input" type="checkbox" value="25sm"
+											id="flexCheckDefault" />
+										<label class="form-check-label lable fw-bold " for="flexCheckDefault">25sm</label>
+									</div>
+
+									<div class="form-check p-0">
+										<input class="form-check-input d-none input" type="checkbox" value="30sm"
+											id="flexCheckDefault1" />
+										<label class="form-check-label lable fw-bold " for="flexCheckDefault1">30sm</label>
+									</div>
+
+									<div class="form-check p-0">
+										<input class="form-check-input d-none input" type="checkbox" value="35sm"
+											id="flexCheckDefault2" />
+										<label class="form-check-label lable fw-bold " for="flexCheckDefault2">35sm</label>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="product">
+
+								<h3 class=" text-black  mb-3 fw-bold">Ustiga nima solaylik</h3>
+
+								<form class="row">
+
+									<div class="col-6">
+
+										<div class="d-flex gap-3 align-items-center mb-4">
+											<input type="checkbox" id="chekd" value="Pomidor">
+											<label class="allInput"  for="chekd"></label>
+											<p class="m-0 fw-bold text-black fs-5">Pomidor</p>
+										</div>
+
+										<div class="d-flex gap-3 align-items-center mb-4">
+											<input type="checkbox" id="chekdone" value="Kutka go'sht">
+											<label class="allInput" for="chekdone"></label>
+											<p class="m-0 fw-bold text-black fs-5">Kutka go'sht</p>
+										</div>
+
+										<div class="d-flex gap-3 align-items-center mb-4">
+											<input type="checkbox" id="chekdtwo" value="Zaytun">
+											<label class="allInput" for="chekdtwo"></label>
+											<p class="m-0 fw-bold text-black fs-5">Zaytun</p>
+										</div>
+
+									</div>
+
+									<div class="col-6">
+
+										<div class="d-flex gap-3 align-items-center mb-4">
+											<input type="checkbox" id="chekdthree" value="Tuzlangab bodring">
+											<label class="allInput" for="chekdthree"></label>
+											<p class="m-0 fw-bold text-black fs-5">Tuzlangab bodring</p>
+										</div>
+
+										<div class="d-flex gap-3 align-items-center mb-4">
+											<input type="checkbox" id="chekdfour" value="Qo'ziqorin">
+											<label class="allInput" for="chekdfour"></label>
+											<p class="m-0 fw-bold text-black fs-5">Qo'ziqorin</p>
+										</div>
+
+										<div class="d-flex gap-3 align-items-center mb-4">
+											<input type="checkbox" id="chekdfive" value="Qazi">
+											<label class="allInput" for="chekdfive"></label>
+											<p class="m-0 fw-bold text-black fs-5">Qazi</p>
+										</div>
+
+									</div>
+
+
+									<h3 class=" text-black  mb-3 fw-bold">Qo'shimcha</h3>
+
+									<div class="col-6">
+
+										<div class="d-flex gap-3 align-items-center mb-4">
+											<input type="checkbox" id="chekdsix" value="Achiq">
+											<label class="allInput" for="chekdsix"></label>
+											<p class="m-0 fw-bold text-black fs-5">Achiq</p>
+										</div>
+
+									</div>
+
+									<div class="col-6">
+
+										<div class="d-flex gap-3 align-items-center mb-4">
+											<input type="checkbox" id="chekdsevn" value="sosiskali">
+											<label class="allInput" for="chekdsevn"></label>
+											<p class="m-0 fw-bold text-black fs-5">Sosiskali</p>
+										</div>
+
+									</div>
+								</form>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col-4 px-3">
+
+						<div class="d-flex align-items-center gap-3 mb-3">
+							<h3 class="m-0 text-black fw-bold">Non:</h3>
+							<p class="nameproduct m-0 fs-4"></p>
+						</div>
+
+						<div class="d-flex align-items-center gap-3 mb-3">
+							<h3 class="m-0 text-black fw-bold">Kattaligi:</h3>
+							<p class="productSize m-0 fs-4"></p>
+						</div>
+
+						<div>
+							<h3 class=" text-black  mb-3 fw-bold">Ustiga:</h3>
+							<p class="Kindproduct"></p>
+						</div>
+
+						<div>
+							<h3 class=" text-black  mb-3 fw-bold">Qo'shimcha:</h3>
+							<p></p>
+						</div>
+
+						<button id="myBtn" type="submit" class="btn btn-danger px-5 py-3">Buyurtma berish</button>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<p class="text-dark fw-bold fs-4">Buyurtmangiz qabul qilindi</p>
+			<button class="close btn btn-success w-25 text-white">tasdiqlash</button>
+		</div>
+	</div>
+
+
+	<!-- MDB -->
+	<script src="./js/main.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"></script>
+</body>
+
+</html>
