@@ -58,9 +58,6 @@ body {
   border: 2px solid chartreuse;
   cursor: pointer;
 }
-.product label:active {
-  transform: scale(1.09);
-}
 
 p {
   width: 300px;

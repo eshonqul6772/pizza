@@ -9,22 +9,19 @@ let arr = ["25sm", "30sm", "35sm"];
 
 
 
-
-for (let i = 0; i < arr.length; i++) {
-
-   if (arr.length[0] == elLable.value) {
-      productSize.textContent = "25sm"
-
-   } else if (arr.length[1] == elLable.value) {
-      productSize.textContent = "30sm"
-   }
-   else if (arr.length[3] == elLable.value) {
-      productSize.textContent = "35sm"
-   }
-}
-
 elLable.addEventListener('click', function () {
-   
+   for (let i = 0; i < arr.length; i++) {
+
+      if (arr.length[0] == elLable.value) {
+         productSize.textContent = "25sm"
+
+      } else if (arr.length[1] == elLable.value) {
+         productSize.textContent = "30sm"
+      }
+      else if (arr.length[3] == elLable.value) {
+         productSize.textContent = "35sm"
+      }
+   }
 })
 
 
@@ -34,6 +31,15 @@ select.addEventListener('click', () => {
 
 
 
+let allInput = document.querySelector('.allInput')
+let kindproduct = document.querySelector('kindproduct') 
+
+
+allInput.addEventListener('click', function(evt){
+   evt.preventDefault();
+   kindproduct.textContent = allInput.value;
+
+});
 
 
 
