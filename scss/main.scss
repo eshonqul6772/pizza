@@ -23,12 +23,13 @@ body {
    border: 3px solid rgb(64, 60, 60) !important;
    transition: all .5s ease;
 
+}
 
-   &:active {
-      background-color: rgb(73, 226, 73);
-      transform: scale(1.03);
-   }
-
+.active {
+   background-color: rgb(73, 226, 73);
+   transform: scale(1.03);
+   border: 5px solid rgb(104, 98, 15) !important;
+   font-size: 20px;
 }
 
 
@@ -40,7 +41,7 @@ body {
       display: none;
    }
 
-   label::before {
+   .allInput::before {
       content: "";
       position: absolute;
       top: -2px;
@@ -55,13 +56,17 @@ body {
       visibility: hidden;
    }
 
-   input:checked+label::before {
+   input:checked~.allInput::before {
       opacity: 1;
       visibility: visible;
    }
 
+   input:checked~.allInput {
+      background-color: blue;
+   }
 
-   label {
+
+   .allInput {
       position: relative;
       display: inline-block;
       width: 30px;
@@ -87,6 +92,11 @@ p {
    height: 100%;
    overflow: auto;
    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.activee{
+  font-size: 24px;
+
 }
 
 

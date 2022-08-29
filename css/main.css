@@ -22,15 +22,18 @@ body {
   border: 3px solid rgb(64, 60, 60) !important;
   transition: all 0.5s ease;
 }
-.lable:active {
+
+.active {
   background-color: rgb(73, 226, 73);
   transform: scale(1.03);
+  border: 5px solid rgb(104, 98, 15) !important;
+  font-size: 20px;
 }
 
 .product input[type=checkbox] {
   display: none;
 }
-.product label::before {
+.product .allInput::before {
   content: "";
   position: absolute;
   top: -2px;
@@ -44,11 +47,14 @@ body {
   opacity: 0;
   visibility: hidden;
 }
-.product input:checked + label::before {
+.product input:checked ~ .allInput::before {
   opacity: 1;
   visibility: visible;
 }
-.product label {
+.product input:checked ~ .allInput {
+  background-color: blue;
+}
+.product .allInput {
   position: relative;
   display: inline-block;
   width: 30px;
@@ -73,6 +79,10 @@ p {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.activee {
+  font-size: 24px;
 }
 
 .modal-content {
